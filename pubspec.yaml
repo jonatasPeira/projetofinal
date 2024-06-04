@@ -1,4 +1,4 @@
-name: projetofinal
+name: ata
 description: A new Flutter project.
 
 version: 1.0.0+1
@@ -8,6 +8,11 @@ environment:
 
 dependencies:
   flutter:
+  uses-material-design: true
+  # ... outras configurações ...
+  dependency_overrides:
+    web: ^0.5.1
+
     sdk: flutter
   firebase_core: ^2.15.0
   firebase_auth: ^4.7.2
@@ -15,7 +20,9 @@ dependencies:
   intl: ^0.18.1
   firebase_messaging: ^14.9.4
   firebase_storage: ^11.7.7
-
+  font_awesome_flutter: ^10.6.0
+  google_sign_in: ^6.1.5
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
