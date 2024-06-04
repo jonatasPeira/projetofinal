@@ -20,10 +20,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'try to add using FlutLab Firebase Configuration',
-        );
+        return android;
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for iOS - '
@@ -50,6 +47,14 @@ class DefaultFirebaseOptions {
         );
     }
   }
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyCz_EhOeB7DF_I0uoaFtNJ26YgDeA89JsU',
+    appId: '1:178734014478:android:e12b5ccb0b14d4bc455c5f',
+    messagingSenderId: '178734014478',
+    projectId: 'projetofinal-10227',
+    storageBucket: 'projetofinal-10227.appspot.com'
+  );
 
   static const FirebaseOptions web = FirebaseOptions(
       apiKey: "AIzaSyAhE5iTdU1MflQxb4_M_uHiXJR9EC_mE_I",
